@@ -74,6 +74,17 @@ h1 {
     color: #001522;
 }
 
+/* Added Danger Button Style */
+.danger {
+    border: 2px solid #ff4d4d;
+    color: #ff4d4d;
+}
+
+.danger:hover {
+    background: #ff4d4d;
+    color: #ffffff;
+}
+
 .features {
     padding: 80px 20px;
     background: rgba(255,255,255,0.03);
@@ -113,11 +124,17 @@ footer {
     padding: 40px 20px;
     font-size: 14px;
     color: #7db6d6;
+    line-height: 1.8;
 }
 
 footer a {
     color: #00c6ff;
     text-decoration: none;
+}
+
+footer a.delete-link {
+    color: #ff4d4d;
+    margin-left: 10px;
 }
 </style>
 </head>
@@ -132,6 +149,7 @@ footer a {
     <div class="buttons">
         <a href="#" class="btn primary">Download on Google Play</a>
         <a href="privacy-policy.html" class="btn secondary">Privacy Policy</a>
+        <a href="https://icevault.ca/account-deletion.html" class="btn danger">Delete Account</a>
     </div>
 </section>
 
@@ -164,7 +182,8 @@ footer a {
 
 <footer>
     © 2026 IceVault | Built by Sean Donauer<br>
-    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="privacy-policy.html">Privacy Policy</a> | 
+    <a href="https://icevault.ca/account-deletion.html" class="delete-link">Request Account Deletion</a>
 </footer>
 
 </body>
